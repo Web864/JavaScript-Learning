@@ -13,7 +13,7 @@ let mydate = new Date()
 console.log(typeof mydate);
 
 // let myCreateDAte = new Date(2023, 0 , 29);
-let myCreateDAte = new Date(2023, 0 , 29, 5,3);
+let myCreateDAte = new Date(2023, 0, 29, 5, 3);
 
 
 // console.log(myCreateDAte.toLocaleString());

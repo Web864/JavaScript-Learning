@@ -1,7 +1,7 @@
 //  ()()
 
 
-(function chai(){
+(function chai() {
     console.log("DB conncted");
 
 })();

@@ -1,7 +1,7 @@
 // let mySym =  Symbol("user1")
 
 
- 
+
 // let myUser = {
 //     name: "ali",
 //     age: 18,
