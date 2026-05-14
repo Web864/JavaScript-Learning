@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Changer</title>
+    <style>
+        body{
+            background: #000;
+            color: aliceblue;
+            text-align: center;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap:10px;
+        }
+        .buttons{
+            height:50px;
+            width:50px;
+            padding:10px;
+            color: #000;
+        }
+        #grey{
+            background-color: gray;
+                        border: 2px solid #000;
+
+            border-radius: 5%;
+        }
+         #yellow{
+            background-color: yellow;
+            border: 2px solid #000;
+            border-radius: 5%;
+        }
+         #green{
+            background-color: green;
+                       border: 2px solid #000;
+
+            border-radius: 5%;
+        }
+         #blue{
+            background-color: blue;
+                        border: 2px solid #000;
+
+            border-radius: 5%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Color CHnager</h1>
+    <div class="center">
+
+        <div class="buttons" id="grey">grey</div>
+        <div class="buttons" id="yellow">Yellow</div>
+        <div class="buttons" id="green">Green</div>
+        <div class="buttons" id="blue">Blue</div>
+    </div>
+</body>
+<script>
+    const buttons = document.querySelectorAll('.buttons')
+    const body = document.querySelector('body')
+
+    buttons.forEach(function (button) {
+        console.log(button)
+        button.addEventListener("click", function(e){
+            console.log(e);
+            console.log(e.target);
+
+            if(e.target.id === 'grey'){
+                body.style.background = e.target.id;
+            }
+             if(e.target.id === 'yellow'){
+                body.style.background = e.target.id;
+            }
+             if(e.target.id === 'green'){
+                body.style.background = e.target.id;
+            }
+             if(e.target.id === 'blue'){
+                body.style.background = e.target.id;
+            }
+        })
+    });
+
+
+</script>
+
+
+
+
+
+
+</html>

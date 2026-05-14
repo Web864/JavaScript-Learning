@@ -8,25 +8,78 @@
 </head>
 
 <body>
-
+<ul class="language">
+    <li>Javascript</li>
+</ul>
 </body>
 
 <script>
+    function addLangauge(languageName){
+        const li = document.createElement('li');
+        li.innerHTML = `${languageName}`
+        document.querySelector('.language').
+        appendChild(li)
+    }
+    addLangauge("python")
+    addLangauge("typscript")
 
 
-    const div = document.createElement('div')
-    // div.innerHTML = "Hello World"
-    div.className = "main"
-    div.od = Math.round(Math.random() * 10 + 1)
-    div.setAttribute("title", "genrated Title")
-    div.backgroundColor = "Green"
-    div.style.padding = "15px"
 
-    let addText = document.createTextNode("chai or code")
+function addOpti(languageName){
+    const li = document.createElement('li')
+    li.appendChild(document.createTextNode(languageName))
+    document.querySelector('.language').appendChild(li)
+}
 
-    div.appendChild(addText)
-    document.body.appendChild(div)
-    console.log(div);
+
+addOpti('greek')
+
+
+
+
+const fourthLang = document.querySelector('li:nth-child(4)')
+// console.log(newlang);
+const newLang = document.createElement('li')
+newLang.textContent = "mojo"
+fourthLang.replaceWith(newLang)
+
+
+
+
+const firstLang = document.querySelector('li:nth-child(1)')
+firstLang.outerHTML = "<li>Mongo</li>"
+
+
+const secLang = document.querySelector("li:nth-child(2)")
+secLang.remove()vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // const div = document.createElement('div')
+    // // div.innerHTML = "Hello World"
+    // div.className = "main"
+    // div.od = Math.round(Math.random() * 10 + 1)
+    // div.setAttribute("title", "genrated Title")
+    // div.backgroundColor = "Green"
+    // div.style.padding = "15px"
+
+    // let addText = document.createTextNode("chai or code")
+
+    // div.appendChild(addText)
+    // document.body.appendChild(div)
+    // console.log(div);
 
 
 </script>
